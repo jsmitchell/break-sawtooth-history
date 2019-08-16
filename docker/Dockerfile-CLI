@@ -1,0 +1,5 @@
+FROM taekion/break-sawtooth-history-base
+
+RUN make cli
+RUN cp -v build/break-sawtooth-history-cli /usr/bin/break-sawtooth-history-cli
+RUN sawtooth keygen

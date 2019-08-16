@@ -1,0 +1,4 @@
+FROM taekion/break-sawtooth-history-base
+
+RUN make tp
+RUN cp -v build/break-sawtooth-history-tp /usr/bin/break-sawtooth-history-tp
